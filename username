@@ -1,0 +1,14 @@
+print("WELCOME TO THE USERNAME GENERATOR")
+
+animal = input("Enter the first animal that comes to your mind: ")
+shoe_brand = input("Enter your favorite brand you shop from: ")
+number = input("Enter your fav number here: ")
+color = input("Enter your favorite color: ")
+
+encrypt_1 = animal[0]
+encrypt_2 = shoe_brand[-1]
+encrypt_3 = number[0]
+encrypt_4 = color[::2]
+
+print("Here your username: ")
+print( encrypt_4 + encrypt_1 + "_" + encrypt_3 + encrypt_2)
